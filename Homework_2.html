@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework 2</title>
+</head>
+<body>
+	<script>
+		'use strict';
+
+        let doIteration = true;
+
+        function containsNotAllowedChars(input) {
+            let containNotAllowededChar = false;
+            const notAllowedChars = ['<', '>', '@', '#'];
+            for (let i = 0; i < notAllowedChars.length; i++) {
+                let notAllowedChar = input.includes(notAllowedChars[i])
+                if (notAllowedChar) {
+                    containNotAllowededChar = true;
+                    break;
+                }
+            }
+            return containNotAllowededChar;
+        }
+
+        while(doIteration) {
+            const userInput = prompt('Please input something.')
+            doIteration = containsNotAllowedChars(userInput);
+        }
+      
+
+      
+	</script>
+</body>
+</html>

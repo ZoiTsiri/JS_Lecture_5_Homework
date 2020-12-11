@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework 1</title>
+</head>
+<body>
+	<script>
+		'use strict';
+		
+		const longestWord = (array) => {
+			let longestString = '';
+			for (let i = 0; i < array.length; i++) {
+				if (array[i].length > longestString.length) {
+					longestString = array[i];
+				}
+			}	
+			return longestString;
+		}
+
+	</script>
+</body>
+</html>
